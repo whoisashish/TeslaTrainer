@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="body.css">
+</head>
+<body>
+
+  <div class='scene'>
+
+  <div class='grass' id='topDebug'></div>
+
+  <div class='road'>
+
+    <div class='ai' id='ai'>
+      <!--Red car image-->
+      <img src="https://s33.postimg.cc/51lpew633/carb.png" />
+      <div class='sensor_1'>1</div>
+      <div class='sensor_2' id='sensor_2'>2</div>
+      <div class='sensor_3'>3</div>
+
+
+    </div>
+
+    <div class='wall' id='wall'>
+      <!--<img src="carb.png" />-->
+    </div>
+
+  </div>
+
+  <div class='grass'></div>
+
+</div>
+
+<div class='debugArea'>
+
+  <input type='text' id='stepsDone' value='0' style='width:50px' />
+
+  <input type='button' value='Start' onClick="runSim('1')" />
+
+  <input type='button' value='Stop' onClick="runSim('0')" />
+
+
+</div>
+
+  <!--Linking the JS file-->
+  <script src="script.js"></script>
+</body>
+</html>
